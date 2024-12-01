@@ -1,0 +1,421 @@
+{
+    "version": 2,
+    "configurePresets": [
+      {
+        "name": "MSBuild_Release_x64",
+        "displayName": "MSBuild_Release_x64",
+        "description": "Preset for build x64 with MSBuild under Windows",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "x64",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Release",
+          "CMAKE_TOOLCHAIN_FILE": "",
+          "CMAKE_C_COMPILER": "cl",
+          "CMAKE_CXX_COMPILER": "cl",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake"
+        }
+      },
+      {
+        "name": "MSBuild_Debug_x64",
+        "displayName": "MSBuild_Debug_x64",
+        "description": "Sets Ninja generator, build and install directory",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "x64",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_C_COMPILER": "cl",
+          "CMAKE_CXX_COMPILER": "cl",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake"
+        }
+      },
+      {
+        "name": "MSBuild_Release_ARM",
+        "displayName": "MSBuild_Release_ARM",
+        "description": "Preset for build ARM with MSBuild under Windows",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "ARM",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Release",
+          "CMAKE_TOOLCHAIN_FILE": "",
+          "CMAKE_C_COMPILER": "cl",
+          "CMAKE_CXX_COMPILER": "cl",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake"
+        }
+      },
+      {
+        "name": "MSBuild_Debug_ARM",
+        "displayName": "MSBuild_Debug_ARM",
+        "description": "Preset for build ARM with MSBuild under Windows",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "ARM",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_C_COMPILER": "cl",
+          "CMAKE_CXX_COMPILER": "cl",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake"
+        }
+      },
+      {
+        "name": "MSBuild_Release_ARM64",
+        "displayName": "MSBuild_Release_ARM64",
+        "description": "Preset for build ARM64 with MSBuild under Windows",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "ARM64",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Release",
+          "CMAKE_TOOLCHAIN_FILE": "",
+          "CMAKE_C_COMPILER": "cl",
+          "CMAKE_CXX_COMPILER": "cl",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake"
+        }
+      },
+      {
+        "name": "MSBuild_Debug_ARM64",
+        "displayName": "MSBuild_Debug_ARM64",
+        "description": "Preset for build ARM64 with MSBuild under Windows",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "ARM64",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_C_COMPILER": "cl",
+          "CMAKE_CXX_COMPILER": "cl",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake"
+        }
+      },
+      {
+        "name": "MSBuild_Release_ARM64EC",
+        "displayName": "MSBuild_Release_ARM64EC",
+        "description": "Preset for build ARM64EC with MSBuild under Windows",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "ARM64EC",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Release",
+          "CMAKE_TOOLCHAIN_FILE": "",
+          "CMAKE_C_COMPILER": "cl",
+          "CMAKE_CXX_COMPILER": "cl",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake"
+        }
+      },
+      {
+        "name": "MSBuild_Debug_ARM64EC",
+        "displayName": "MSBuild_Debug_ARM64EC",
+        "description": "Preset for build ARM64 with MSBuild under Windows",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "ARM64EC",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_C_COMPILER": "cl",
+          "CMAKE_CXX_COMPILER": "cl",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake"
+        }
+      },
+      {
+        "name": "MSBuild_Release_x32",
+        "displayName": "MSBuild_Release_x32",
+        "description": "Preset for build x32 with MSBuild under Windows",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "x32",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Release",
+          "CMAKE_TOOLCHAIN_FILE": "",
+          "CMAKE_C_COMPILER": "cl",
+          "CMAKE_CXX_COMPILER": "cl",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake"
+        }
+      },
+      {
+        "name": "MSBuild_Debug_x32",
+        "displayName": "MSBuild_Debug_x32",
+        "description": "Sets Ninja generator, build and install directory",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "x32",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_C_COMPILER": "cl",
+          "CMAKE_CXX_COMPILER": "cl",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake"
+        }
+      },
+      {
+        "name": "GCC_Release_x64",
+        "displayName": "GCC_Release_x64",
+        "description": "Sets Ninja generator, build and install directory",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "x64",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Release",
+          "CMAKE_TOOLCHAIN_FILE": "",
+          "CMAKE_C_COMPILER": "gcc",
+          "CMAKE_CXX_COMPILER": "g++",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake"
+        }
+      },
+      {
+        "name": "GCC_Debug_x64",
+        "displayName": "GCC_Debug_x64",
+        "description": "Sets Ninja generator, build and install directory",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "x64",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_C_COMPILER": "gcc",
+          "CMAKE_CXX_COMPILER": "g++",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake"
+        }
+      },
+      {
+        "name": "GCC_Release_x32",
+        "displayName": "GCC_Release_x32",
+        "description": "Sets Ninja generator, build and install directory",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "x32",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Release",
+          "CMAKE_TOOLCHAIN_FILE": "",
+          "CMAKE_C_COMPILER": "gcc",
+          "CMAKE_CXX_COMPILER": "g++",
+          "GLIESE_ARCHITECTURE_64 ": "ON",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake"
+        }
+      },
+      {
+        "name": "GCC_Debug_x32",
+        "displayName": "GCC_Debug_x32",
+        "description": "Sets Ninja generator, build and install directory",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "x32",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_C_COMPILER": "gcc",
+          "CMAKE_CXX_COMPILER": "g++",
+          "GLIESE_ARCHITECTURE_64 ": "ON",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake"
+        }
+      },
+      {
+        "name": "GCC_Debug_ARM64",
+        "displayName": "GCC_Debug_ARM64",
+        "description": "Preset for building ARM64 (64-bit) in Debug mode with GCC",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "ARM",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_C_COMPILER": "gcc",
+          "CMAKE_CXX_COMPILER": "g++",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake"
+        }
+      },
+      {
+        "name": "GCC_Release_ARM64",
+        "displayName": "GCC_Release_ARM64",
+        "description": "Preset for building ARM64 (64-bit) with GCC",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "ARM",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Release",
+          "CMAKE_C_COMPILER": "gcc",
+          "CMAKE_CXX_COMPILER": "g++",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake"
+        }
+      },
+      {
+        "name": "GCC_Release_ARMv7",
+        "displayName": "GCC_Release_ARMv7",
+        "description": "Preset for building ARM 32-bit with GCC",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "ARM",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Release",
+          "CMAKE_C_COMPILER": "arm-linux-gnueabihf-gcc",
+          "CMAKE_CXX_COMPILER": "arm-linux-gnueabihf-g++",
+          "GLIESE_ARCHITECTURE_64 ": "OFF", 
+          "CMAKE_SYSTEM_PROCESSOR":"arm",
+          "BOOST_ARCHITECTURE":"arm",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake",
+          "CMAKE_TOOLCHAIN_FILE":"./cmake/LinuxGCC_armhf.cmake"
+        }
+      },
+      {
+        "name": "GCC_Debug_ARMv7",
+        "displayName": "GCC_Debug_ARMv7",
+        "description": "Preset for building ARM 32-bit in Debug mode with GCC",
+        "generator": "Ninja",
+        "architecture": {
+          "value": "ARM",
+          "strategy": "external"
+        },
+        "binaryDir": "${sourceDir}/build/",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_C_COMPILER": "arm-linux-gnueabihf-gcc",
+          "CMAKE_CXX_COMPILER": "arm-linux-gnueabihf-g++",
+          "GLIESE_ARCHITECTURE_64 ": "OFF",
+          "CMAKE_SYSTEM_PROCESSOR":"arm",
+          "BOOST_ARCHITECTURE":"arm",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/",
+          "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "./cmake/conan_provider.cmake",
+          "CMAKE_TOOLCHAIN_FILE":"./cmake/LinuxGCC_armhf.cmake"
+        }
+      }
+    ],
+    "buildPresets": [
+      {
+        "name": "GCC_Debug_x64",
+        "configurePreset": "GCC_Debug_x64"
+      },
+      {
+        "name": "GCC_Debug_x32",
+        "configurePreset": "GCC_Debug_x64"
+      },
+      {
+        "name": "GCC_Release_x64",
+        "configurePreset": "GCC_Release_x64"
+      },
+      {
+        "name": "GCC_Release_x32",
+        "configurePreset": "GCC_Release_x64"
+      },
+      {
+        "name": "MSBuild_Release_x64",
+        "configurePreset": "MSBuild_Release_x64"
+      },
+      {
+        "name": "MSBuild_Release_x32",
+        "configurePreset": "MSBuild_Release_x32"
+      },
+      {
+        "name": "MSBuild_Debug_x64",
+        "configurePreset": "MSBuild_Debug_x64"
+      },
+      {
+        "name": "MSBuild_Debug_x32",
+        "configurePreset": "MSBuild_Debug_x32"
+      },
+      {
+        "name": "MSBuild_Release_ARM",
+        "configurePreset": "MSBuild_Release_ARM"
+      },
+      {
+        "name": "MSBuild_Debug_ARM",
+        "configurePreset": "MSBuild_Debug_ARM"
+      },
+      {
+        "name": "MSBuild_Release_ARM64",
+        "configurePreset": "MSBuild_Release_ARM64"
+      },
+      {
+        "name": "MSBuild_Debug_ARM64",
+        "configurePreset": "MSBuild_Debug_ARM64"
+      },
+      {
+        "name": "MSBuild_Release_ARM64EC",
+        "configurePreset": "MSBuild_Release_ARM64EC"
+      },
+      {
+        "name": "MSBuild_Debug_ARM64EC",
+        "configurePreset": "MSBuild_Debug_ARM64EC"
+      },
+      {
+        "name": "GCC_Debug_ARMv7",
+        "configurePreset": "GCC_Debug_ARMv7"
+      },
+      {
+        "name": "GCC_Release_ARMv7",
+        "configurePreset": "GCC_Release_ARMv7"
+      },
+      {
+        "name": "GCC_Debug_ARM64",
+        "configurePreset": "GCC_Debug_ARM64"
+      },
+      {
+        "name": "GCC_Release_ARM64",
+        "configurePreset": "GCC_Release_ARM64"
+      }
+    ]
+  }
+  
